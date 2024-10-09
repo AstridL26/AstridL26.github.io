@@ -2,29 +2,64 @@
 <html>
 <head>
 	<style type = "text/css">
+
+		body{
+			margin:0px;
+		}
 		#menubar{
-			width: 1000px;
-			height: 100px;
-			background-color: pink;
+			position:absolute;
+			top:0px;
+			width: 100%;
+			height: 1000px;
+			background-color: rgb(217,185,198);
+		}
+
+		#projectslink{
+			display: inline-block;
+			width: 100px;
+			height:100px;
+			background-image: url("heart.png");
+			background-size:contain;
+			background-repeat: no-repeat;
+
+		}
+
+		#journallink{
+			display: inline-block;
+			width: 100px;
+			height:100px;
+			background-image: url("heart.png");
+			background-size:contain;
+			background-repeat: no-repeat;
+		} 
+
+		h1{
+			color:darkgrey;
 		}
 	</style>
 		
 </head>
 <body>
 	<div id = "menubar">
-	<h1>
-	ASTRID'S WEBSITE
-	</h1>
+	
+	<center>
+	<h1>ASTRID'S WEBSITE</h1>
+
+	
 	<a href="projects.html">
+	<div id = "projectslink">
 	
-	To my projects!
-	
+	</div>
 	</a>
+
 	<a href="journal.html">
-	To my journal!
-	</a>
+	<div id = "journallink">
 	
+	</div>
+	</a>
 
 	</div>
+
+</center>
 </body>
 </html>
