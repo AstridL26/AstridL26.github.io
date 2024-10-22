@@ -12,10 +12,11 @@
 			width: 100%;
 			height: 1000px;
 			background-color: rgb(217,185,198);
-			z-index: -1;
+			z-index: -10;
 		}
 
 		#projectslink{
+			z-index:10;
 			margin:20px;
 			display: inline-block;
 			position:relative;
@@ -29,6 +30,7 @@
 		}
 
 		#journallink{
+			z-index:10;
 			margin:20px;
 			position:relative;
 			top: 60px;
@@ -77,11 +79,26 @@
 				background-image: url("DSCN0879.png");
 				background-size:contain;
 			}	
+
+			a{
+				text-decoration:none;
+			}
 	</style>
 		
 </head>
 <body>
 	<div id = "menubar">
+
+<div class="box" id="box1"></div>
+		<div class="box" id="box2"></div>
+		<div class="box" id="box3"></div>
+		<div class="box" id="box4"></div>
+		<div class="box" id="box5"></div>
+		<div class="box" id="box6"></div>
+		<div class="box" id="box7"></div>
+		<div class="box" id="box8"></div>
+		<div class="box" id="box9"></div>
+</div>
 
 		
 	
@@ -91,29 +108,18 @@
 	<center>
 	<a href="projects.html">
 	<div id = "projectslink">
-	
 	</div>
 	</a>
 
 	<a href="journal.html">
 	<div id = "journallink">
-
-	
 	</div>
 	</a>
 
-</div>
 
 
-<div class="box" id="box1"></div>
-	<div class="box" id="box2"></div>
-		<div class="box" id="box3"></div>
-		<div class="box" id="box4"></div>
-		<div class="box" id="box5"></div>
-		<div class="box" id="box6"></div>
-		<div class="box" id="box7"></div>
-		<div class="box" id="box8"></div>
-		<div class="box" id="box9"></div>
+
+		
 
 
 	 </div> <!--end for menubar -->
