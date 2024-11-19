@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+	.hearts{
+		width:100px;
+		background-color: deeppink;
+		height:100px;
+		display:inline-block;
+	}
+	</style>
+	</head>
+	<script type="text/javascript">
+		function makeHeart(){
+			let heart = document.createElement ("div")
+			document.body.appendChild(heart)
+			heart.classList.add("hearts")
+		}
+
+
+
+	setInterval(makeHeart, 100)
+
+	</script>
+
+<body>
+
+</body>
+</html>
