@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		
+		#gift{
+			width: 100px;
+			height:100px;
+			background-color:lightpink;
+			position: absolute;
+		}
+		#gift2{
+			width: 100px;
+			height:100px;
+			background-color:hotpink;
+			position: absolute;
+		}
+		#gift3{
+			width: 100px;
+			height:100px;
+			background-color:deeppink;
+			position: absolute;
+		}
+		#gift4{
+			width: 100px;
+			height:100px;
+			background-color:floralwhite;
+			position: absolute;
+		}
+		#gift5{
+			width: 100px;
+			height:100px;
+			background-color:lightcoral;
+			position: absolute;
+		}
+		#gift6{
+			width: 100px;
+			height:100px;
+			background-color:rebeccapurple;
+			position: absolute;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<div id = "gift"></div>
+	<div id = "gift2"></div>
+	<div id = "gift3"></div>
+	<div id = "gift4"></div>
+	<div id = "gift5"></div>
+	<div id = "gift6"></div>
+
+	<script type="text/javascript">
+
+function move(){
+	let x = Math.random()*1000
+	let y = Math.random()*1000
+
+	let a = Math.random()*1000
+	let b = Math.random()*1000
+
+	let d = Math.random()*1000
+	let c = Math.random()*1000
+
+	let e = Math.random()*1000
+	let f = Math.random()*1000
+
+	let g = Math.random()*1000
+	let h = Math.random()*1000
+
+	let i = Math.random()*1000
+	let j = Math.random()*1000
+
+	gift.style.left = x +"px"
+	gift.style.top = y +"px"
+
+	gift2.style.left = a +"px"
+	gift2.style.top = b +"px"
+	
+	gift3.style.left = c +"px"
+	gift3.style.top = d +"px"
+	
+	gift4.style.left = e +"px"
+	gift4.style.top = f +"px"
+
+	gift5.style.left = g +"px"
+	gift5.style.top = h +"px"
+
+	gift6.style.left = i +"px"
+	gift6.style.top = j +"px"
+	}
+
+	setInterval(move,100)
+	</script>
+
+	
+
+
+</body>
+</html>
