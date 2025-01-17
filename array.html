@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#box{
+			height: 400px;
+			width: 400px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-color: rgb(177, 156, 217);
+			background position: center;
+		}
+
+	</style>
+</head>
+<body>
+<center> 
+<h1>
+PICTURES OF SANAA
+</h1>
+<div id = "box"></div>
+
+</center>
+
+
+<script type="text/javascript">
+	
+	let sanaapics = ["url(sanaa1.jpg)","url(sanaa2.jpg)","url(sanaa3.jpg)","url(sanaa4.jpg)","url(sanaa5.png)"]
+
+	box.addEventListener("click", function(){
+		let randomNumber = Math.round(Math.random()*5)
+		console.log(randomNumber)
+		box.style.backgroundImage=sanaapics[randomNumber]
+	})
+
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#square{
+			height: 400px;
+			width: 400px;
+			background-color:darkblue;
+			background-image: url(missedcalls.png);
+			background-size: contain;
+		}
+	</style>
+</head>
+<body>
+
+<div id = "square"></div>
+<audio id="song" src="missedcalls.mp3"></audio>
+<script type="text/javascript">
+
+	let counter = 0;
+	square.addEventListener("click", function(){
+		counter = counter+1;
+	
+	if (counter%2==0) {
+		song.pause ()
+	}
+	else if (counter%2==1) {
+	
+		song.play ()
+	}
+})
+
+	</script>
+</body>
+</html>

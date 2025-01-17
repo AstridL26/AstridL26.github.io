@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		#month{
+		height: 150px;
+		width: 400px;
+		background-color: yellow;
+		display: inline-block;
+		background-repeat: no-repeat;
+		margin:10px;
+		background-position: center;
+
+		}
+
+		#day{
+		height: 150px;
+		width: 400px;
+		border: 5px;
+		background-color: blue;
+		display: inline-block;
+		background-repeat: no-repeat;
+		font-size: 50px;
+		position: absolute;
+		top: 5px;
+		margin:10px;
+		left:500px;
+
+	}
+	</style>
+</head>
+<body>
+<div id="month"></div>
+<div id="day"></div>
+
+<script type="text/javascript">
+
+	let images = ["url(january.png)", "url(february.png)","url(march.png)","url(april.png)","url(may.png)","url(june.png)","url(july.pnsg)","url(august.png)","url(september.png)","url(october.png)","url(november.png)","url(december.png)"]
+	let numbers = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"]
+
+
+	month.addEventListener("click", function(){
+			let random1 = Math.floor(images.length*Math.random())
+
+			month.style.backgroundImage = images[random1]
+	day.innerText = Math.floor(numbers.length*Math.random())
+
+
+
+	})
+
+
+</script>
+</body>
+</html>
