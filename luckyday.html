@@ -5,7 +5,6 @@
 		#month{
 		height: 150px;
 		width: 400px;
-		background-color: yellow;
 		display: inline-block;
 		background-repeat: no-repeat;
 		margin:10px;
@@ -17,33 +16,61 @@
 		height: 150px;
 		width: 400px;
 		border: 5px;
-		background-color: blue;
 		display: inline-block;
 		background-repeat: no-repeat;
 		font-size: 50px;
 		position: absolute;
-		top: 5px;
+		top: 15px;
 		margin:10px;
 		left:500px;
 
 	}
+		#toggle{
+			height: 150px;
+			width: 50px;
+			border: 5px;
+			left: 1000px;
+			top: 15px;
+			background-repeat: no-repeat;
+			display: inline-block;
+			position: absolute;
+			background-image: url("lever.png");
+			background-size: contain;	
+		}
+
+		#luck{
+			height: 200px;
+			width: 1000px;
+			font-size: 30px;	
+
+		}
 	</style>
 </head>
 <body>
 <div id="month"></div>
 <div id="day"></div>
+<div id="toggle"></div>
+<center>
+	<div id="luck"></div>
+	<h1>CLICK LEVER FOR A RANDOM DAY!</h1>
+
+</center>
 
 <script type="text/javascript">
 
-	let images = ["url(january.png)", "url(february.png)","url(march.png)","url(april.png)","url(may.png)","url(june.png)","url(july.pnsg)","url(august.png)","url(september.png)","url(october.png)","url(november.png)","url(december.png)"]
+	let images = ["url(january.png)", "url(february.png)","url(march.png)","url(april.png)","url(may.png)","url(june.png)","url(july.png)","url(august.png)","url(september.png)","url(october.png)","url(november.png)","url(december.png)"]
 	let numbers = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28"]
+	let luckiness = ["you will have a bad day", "this will be the best day of the year!", "it will be raining", "this day you will be lucky!", "this day you will meet someone important"]
 
 
-	month.addEventListener("click", function(){
+	toggle.addEventListener("click", function(){
 			let random1 = Math.floor(images.length*Math.random())
+			let random2 = Math.floor(luckiness.length*Math.random())
 
-			month.style.backgroundImage = images[random1]
-	day.innerText = Math.floor(numbers.length*Math.random())
+
+		month.style.backgroundImage = images[random1]
+		day.innerText = Math.floor(numbers.length*Math.random())
+		luck.innerText = luckiness[random2]
 
 
 
