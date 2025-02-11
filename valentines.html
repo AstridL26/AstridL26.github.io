@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body{background-color: rgb(217,185,198);}
+		#heart{
+			height: 500px;
+			width: 500px;
+			top: 100px;
+			left: 400px;
+			background-image: url("vdayheart.png");
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		#text{
+			font-size: 20px;
+			position: relative;
+			top: 275px;
+			color: white;
+			left: 525px;	
+
+		}
+		.confetti{
+      height: 5px;
+      width: 5px;
+      background-color: lightblue;
+      position: absolute;
+    }
+		
+
+	</style>
+</head>
+<body>
+<a href="valentines2.html">
+    <div id="heart"></div>  </a>
+
+<div id="text">
+<h1>CLICK ME</h1>
+</div>
+<div id="background"></div>
+<script type="text/javascript">
+let colors = ["pink", "red", "lightpink"]
+
+  function makeConfetti(){
+
+    let sprinkle = document.createElement("div")
+    document.body.appendChild(sprinkle)
+    sprinkle.classList.add("confetti")
+
+    sprinkle.style.top=100*Math.random()+"px"
+    sprinkle.style.left=Math.random()*1500+"px"
+
+    // function chooseColor(){
+
+    // }
+    let randomColor = Math.floor(Math.random()*colors.length)
+
+    sprinkle.style.backgroundColor = colors[randomColor]
+
+
+    function fall(){
+    sprinkle.style.top=parseInt(sprinkle.style.top)+ Math.random()*100+"px"
+    }
+
+    setInterval(fall,100)
+  }
+
+  
+
+  for(let i=0; i<1000; i=i+1){
+    makeConfetti(i)
+  }
+</script>
+</body>
+</html>

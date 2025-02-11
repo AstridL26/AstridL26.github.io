@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		.confetti{
+			height: 5px;
+			width: 5px;
+			background-color: lightblue;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+
+<script type="text/javascript">
+		//1. make function 2) make styling or for loop 3. make for loop and run function, make a dive, put div in body, add a class to the div so that we can style it
+	let colors = ["pink", "red", "lightpink"]
+
+	function makeConfetti(){
+
+		let sprinkle = document.createElement("div")
+		document.body.appendChild(sprinkle)
+		sprinkle.classList.add("confetti")
+
+		sprinkle.style.top=100*Math.random()+"px"
+		sprinkle.style.left=Math.random()*1000+"px"
+
+		// function chooseColor(){
+
+		// }
+		let randomColor = Math.floor(Math.random()*colors.length)
+
+		sprinkle.style.backgroundColor = colors[randomColor]
+
+
+		function fall(){
+		sprinkle.style.top=parseInt(sprinkle.style.top)+ Math.random()*100+"px"
+		}
+
+		setInterval(fall,100)
+	}
+
+	
+
+	for(let i=0; i<1000; i=i+1){
+		makeConfetti(i)
+	}
+</script>
+</body>
+</html>

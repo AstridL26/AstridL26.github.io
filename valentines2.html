@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style type="text/css">
+	#bg1{
+		height: 2000px;
+		width: 475px;
+		background-color: lightblue;
+		display: inline-block;
+		position: relative;
+
+	}
+	#bg2{
+		height: 2000px;
+		width: 475px;
+		background-color: lightpink;
+		display: inline-block;
+		position: relative;
+	}
+	#bg3{
+		height: 2000px;
+		width: 460px;
+		background-color: lightyellow;
+		display: inline-block;
+		position: relative;
+	}
+	#text{
+		font-size: 50px;
+		top: 100px;
+		left:300px;
+		position: absolute;
+		z-index: 5;
+	}
+	#photo{
+		height: 400px;
+		width: 400px;
+		display: inline-block;
+		top: 200px;
+		left:500px;
+		position: absolute;
+		z-index: 10;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		background-image: url("questionmark.png");
+	}
+		
+	
+
+	
+
+</style>
+</head>
+<body>
+
+<div id="text">WHICH HOUSE MEMBER ARE YOU?</div>
+
+<div id="bg1"></div>
+<div id="bg2"></div>
+<div id="bg3"></div>
+<div id="photo"></div>
+
+<script type="text/javascript">
+
+let images = ["url(sophie.png)", "url(greta.png)","url(alex.JPG)","url(kayla.jpg)","url(hannah.jpg)","url(kaitlin.JPG)","url(wongail.png)","url(astrid2.png)","url(sanaa1.jpg)","url(brooke.png)"]
+
+photo.addEventListener("click", function(){
+			let random1 = Math.floor(images.length*Math.random())
+			photo.style.backgroundImage = images[random1]
+		})
+</script>
+</body>
+</html>
