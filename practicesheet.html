@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	#square{
+		height: 100px;
+		width: 100px;
+		background-color: skyblue;
+
+	}
+</style>
+	
+</head>
+<body>
+<div id="square"></div>
+<script type="text/javascript">
+	square.addEventListener("click",function (){
+		let r = Math.random()*225
+		let g = Math.random()*225
+		let b = Math.random()*225
+		square.style.backgroundColor = "rgb("+r+","+g+","+b+")"
+		})
+</script>
+</body>
+</html>
