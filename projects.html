@@ -2,19 +2,31 @@
 <html>
 <head>
 	<style type = "text/css">
-	body{background-color: rgb(217,185,198);}
+
+		a{
+			text-decoration: none;
+		}
+
+	body{
+		padding-left:100px;
+		padding-top:100px;
+		margin:0px;
+		background-color: rgb(217,185,198);
+	}
 
 	#animationlink{
 		width:60px;
 		height:60px;
 		display: inline-block;
 		background-color:rgb(255, 209, 223);
+/*		position: fixed;*/
 	}
 	#jumpscarelink{
 		width: 60px;
 		height: 60px;
 		display: inline-block;
-		background-color: rgb(255, 182, 193):
+		background-color: rgb(247, 135, 154);
+/*		position: fixed;*/
 		
 	}
 	#randomlink{
@@ -22,6 +34,7 @@
 	height: 60px;
 	display: inline-block;
 	background-color: rgb(255, 190, 200);
+	position: fixed;
 	}
 
 	#elifpracticelink{
@@ -29,6 +42,7 @@
 		height:60px;
 		display: inline-block;
 		background-color: rgb(255, 199, 210);
+/*		position: fixed;*/
 
 }
 
@@ -37,6 +51,7 @@
 		height:60px;
 		display: inline-block;
 		background-color: rgb(240, 180, 200);
+/*		position: fixed;*/
 	
 	
 }
@@ -45,6 +60,7 @@
 		height:60px;
 		display: inline-block;
 		background-color: lightpink;
+/*		position: fixed;*/
 	}
 	#title{
 		font-size: ;
@@ -54,11 +70,37 @@
 		height:60px;
 		display: inline-block;
 		background-color: hotpink;
+/*		position: fixed;*/
+	}
+
+
+	#margin1{
+		height: 20px;
+		width: 2000px;
+		top: 0px;
+		left: -200px;
+		background-color:rgb(200,135,150);;
+		margin: 0px;
+		position: fixed;
+	}
+	#margin2{
+		height: 2000px;
+		width: 20px;
+		top: 0px;
+		left: 0px;
+		background-color:rgb(200,135,150);;
+		margin: 0px;
+		position: fixed;
+
 	}
 
 	</style>
 </head>
 <body>
+
+	<div class="margins" id = margin1></div>
+	<div class="margins"  id = margin2></div>
+
 	<div id="title">
 	<h1>PROJECTS</h1>
 	</div>
@@ -66,6 +108,7 @@
 	<a href="animation.html">
 		<div id =animationlink></div>
 	</a>
+
 	<a href="jumpscare.html">
 		<div id =jumpscarelink></div>
 	</a>
