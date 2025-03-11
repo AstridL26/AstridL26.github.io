@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<style type="text/css">
+body{
+	
+		background-color: rgb(217,185,198);
+	}
+	#bar{
+		z-index: 10;
+		width:105%;
+		height: 75px;
+		background-color:rgb(200,135,150);;
+		position: fixed;
+		margin: 0px;
+		border-radius: 0px;
+		top:0px;
+		left:-5%;
+
+	}
+	#text{
+		font-size: 50px;
+		top: 10px;
+		left: 10px;
+		
+
+	}
+
+	</style>
+</head>
+<body>
+	<div id = "bar">
+		ASTRID'S WEBSITE
+	</div>
+	<div od = "text"></div>
+<script type="text/javascript">
+
+    let counter =0
+    function makeSquare (x) {
+    		counter=counter+1
+            var square = document.createElement('div');
+                        document.body.appendChild(square);
+            square.style.width = "150px";
+            square.style.height = "150px";
+            square.style.display = "inline-block";
+            square.style.margin = "4px";
+            square.style.backgroundRepeat = "no-repeat";
+            square.style.border = "1px";
+            // square.style.backgroundColor = "green";
+
+            square.style.backgroundImage = "url(./images/" + counter + ".png)";
+
+            square.style.backgroundSize = "cover";
+            square.style.id = "square" + x;
+
+            if(counter>12){
+            	counter=0
+            }
+
+        };
+
+
+    for (var i = 1; i < 46; i=i+1) 
+    { makeSquare(i);}
+</script>
+
+
+</body>
+</html>
