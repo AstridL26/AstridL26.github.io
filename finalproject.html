@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	body{background-color: rgb(217,185,198);}
+
+	.box{
+		width:550px;
+		height:300px;
+		top: 250px;
+		left: 475px;
+		background-color:whitesmoke;
+		border-radius: 5%;
+		position: fixed;
+		z-index: 20;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+
+	}
+	.box2{
+		width:150px;
+		height:300px;
+		top: 250px;
+		left: 475px;
+		background-color:lightgrey;
+		border-radius: 5%;
+		position: fixed;
+		z-index: 20;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+
+	}
+	.box3{
+		width:20px;
+		height:20px;
+		top: 255px;
+		left: 480px;
+		background-color:red;
+		border-radius: 50%;
+		position: fixed;
+		z-index: 20;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+
+	}
+	#computer{
+		width:1500px;
+		height: 1500px;
+		background-image: url("screen1.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		position: fixed;
+		z-index: 1;
+	}
+	#notesapp{
+		width: 50px;
+		height: 50px;
+		top: 200px;
+		left: 1050px;
+		background-color: white;
+		border-radius: 25%;
+		position: fixed;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+		z-index: 2;
+
+	}
+	#notestop{
+		width: 50px;
+		height: 15px;
+		top: 200px;
+		left: 1050px;
+		background-color: yellow;
+		border-radius: 25%;
+		position: fixed;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+		z-index: 3;
+
+	}
+	#noteline1{
+		width: 52px;
+		height: 1px;
+		top: 225px;
+		left: 1050px;
+		background-color: black;
+		border-radius: 25%;
+		position: fixed;
+		z-index: 4;
+
+	}
+	#noteline2{
+		width: 52px;
+		height: 1px;
+		top: 238px;
+		left: 1050px;
+		background-color: black;
+		border-radius: 25%;
+		position: fixed;
+		z-index: 5;
+
+	}
+	#phoneapp{
+		width: 50px;
+		height: 50px;
+		top: 275px;
+		left: 1050px;
+		background-color: rgb(76,236,100);
+		border-radius: 25%;
+		position: fixed;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+		background-image: url("phoneimage.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 6;
+		
+
+	}
+	#colorapp{
+		width: 50px;
+		height: 50px;
+		top: 350px;
+		left: 1050px;
+		border-radius: 25%;
+		position: fixed;
+		border-radius: 10px;
+		border-style: solid;
+		border-color: black;
+		background-image: url("pintrest.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: white;
+		z-index: 7;
+		
+
+	}
+	#folder{
+		width: 75px;
+		height: 50px;
+		top: 250px;
+		left: 500px;
+		background-color: lightskyblue;
+		border-radius: 25%;
+		position: fixed;
+		z-index: 8;
+		
+
+	}
+	#foldertop{
+		width: 50px;
+		height: 30px;
+		top: 240px;
+		left: 500px;
+		background-color: lightskyblue;
+		border-radius: 25%;
+		position: fixed;
+		z-index: 9;
+
+
+	}
+	#bottombarcover{
+	background-color: black;
+	top: 660px;
+	left: 600px;
+	width: 300px;
+	height: 15px;
+	position:fixed;	
+	
+	}
+	#bottombar{
+	border-radius: 25%;
+	background-color: lightgrey;
+	top: 600px;
+	left: 600px;
+	width: 300px;
+	height: 75px;
+	position:fixed;
+		
+	}
+	#notesapp2{}
+	
+	
+</style>
+</head>
+<body>
+
+<div id="computer">
+<div id="square"></div>
+<div id="square2"></div>
+<div id="square3"></div>
+<div id="bottombar"></div>
+<div id="bottombarcover"></div>
+<div id="notesapp"></div>
+<div id="phoneapp"></div>
+<div id="colorapp"></div>
+<div id="notesapp2"></div>
+<div id="phoneapp2"></div>
+<div id="colorapp2"></div>
+<div id="folder"></div>
+<div id="foldertop"></div>
+<div id="notestop"></div>
+<div id="noteline1"></div>
+<div id="noteline2"></div>
+
+</div> <!-- end of computer div -->
+
+<script type="text/javascript">
+	
+	notesapp.addEventListener("click", function(){
+		square.classList.add("box")
+		square2.classList.add("box2")
+		square3.classList.add("box3")
+	})
+	square3.addEventListener("click", function(){
+		square.classList.remove("box")
+		square2.classList.remove("box2")
+		square3.classList.remove("box3")
+	})
+</script>
+</body>
+</html>
